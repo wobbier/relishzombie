@@ -1,0 +1,132 @@
+@import url("./reset.css");
+@import url("http://fonts.googleapis.com/css?family=Lobster+Two&v2");
+body{
+	background:#f0f0f0;
+}
+#wrapper{
+	width:915px;
+	margin:auto;
+}
+a{
+	text-decoration:none;
+}
+h1{
+	font-family: 'Lobster Two', cursive;
+	font-size:60px;
+	font-weight:bolder;
+	margin:20px 0 5px 0;
+}
+.left{
+	text-align:right;
+	width:200px;
+	position:fixed;
+	top:0;
+}
+.left ul{
+	margin:0;
+	list-style:none;
+}
+.left ul li{
+	padding:2px 5px;
+}
+.left ul a:hover li{
+	color:#fff;
+	background:#222;
+}
+.right{
+	float:left;
+	border-left:5px solid #222;
+	padding:118px 0 20px 15px;
+	margin-left:215px;
+}
+.col{
+	width: 216px;
+	float: left;
+	margin-right:4px;
+	margin-left:4px;
+}
+.col a{
+	position:relative;
+	display:block;
+	margin-bottom:10px;
+}
+.col img{
+	width:100%;
+	padding:2px 0;
+}
+.col .thumb-shadow-left{
+	width:200px;
+	height:109px;
+	position:absolute;
+	left:-8px;
+	bottom:-18px;
+	z-index:-1;
+}
+.col .thumb-shadow-right{
+	width:200px;
+	height:109px;
+	position:absolute;
+	right:-8px;
+	bottom:-18px;
+	z-index:-1;
+}
+.col .thumb-curl-left{
+	width:125px;
+	height:80px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	z-index:99;
+}
+.col .thumb-curl-right{
+	width:125px;
+	height:80px;
+	position:absolute;
+	right:0;
+	bottom:0;
+	z-index:99;
+}
+.title{
+	height:30px;
+	line-height: 30px;
+	margin-left:-15px;
+	padding:0px 25px 0 15px;
+	float:left;
+	font-size:16px;
+	font-weight:bolder;
+	color:#f0f0f0;
+	background:url(../img/arrow.png) #222 no-repeat top right !important;
+}
+.title .date{
+	display: inline-block;
+	margin-left:10px;
+	padding:0px 0 0 35px;
+	background:url(/img/div.png) no-repeat left top;
+}
+.post{
+	margin-bottom:10px;
+}
+.post img{
+	display:block;
+	margin:auto;
+	margin-bottom:10px;
+	width:685px;
+	height:inherit;
+}
+.postText{
+	margin-top:10px;
+}
+.twitter a{
+	font-weight:bold;
+}
+.twitter p{
+	border-bottom:solid 1px #CCC;
+	padding:10px;
+	padding-top:0;
+}
+.videos{
+	white-space:pre;
+}
+.videos .post a{
+	font-weight:bold;
+}

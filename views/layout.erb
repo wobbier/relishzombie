@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="The home of Mitch Andrews!">
+		<meta name="keywords" content="wobbier, mitch andrews, coding, programmer, video game programmer, student, indie">
+        <title>
+			<% if @title %>
+				<%= @title %> / Rob Evola
+			<% else %>
+				Rob Evola
+			<% end %>
+		</title>
+        <link href="css/global.css" type="text/css" rel="stylesheet" />
+        <script src="http://code.jquery.com/jquery-1.6.2.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="left">
+                <h1>Rob Evola</h1>
+                <ul id="nav">
+                    <a href="/"><li>Home</li></a>
+                    <a href="/twitter"><li>Twitter</li></a>
+                    <a href="/blog"><li>Blog</li></a>
+                    <a href="/portfolio"><li>Portfolio</li></a>
+                    <!-- audio id="radio"><source src="http://173.192.22.204:8022/;&type=sound"></audio -->
+                 </ul>
+            </div>
+            <%= yield %>
+        </div>
+    </body>
+</html>

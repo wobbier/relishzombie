@@ -1,0 +1,35 @@
+<div id="blog">
+	<%= erb :_post, :locals => { :post => @post } %>
+	<ul id="more-posts">
+		<div class="row">
+			<% if @post.prev? %>
+			<a href="<%= @post.prev.path %>" class="block-link">
+				<li class="extra-post left-post alizarin-box">
+					<div class="post-title"><%= @post.prev.title %></div>
+					<div class="post-date"><%= @post.prev.created_at %></div>
+				</li>
+			</a>
+			<% else %>
+				<li class="extra-post left-post alizarin-box">
+					<div class="post-title">&nbsp;</div>
+					<div class="post-date">&nbsp;</div>
+				</li>
+			<% end %>
+			<% if @post.next? %>
+			<a href="<%= @post.next.path %>" class="block-link">
+				<li class="extra-post right-post peter-river-box">
+					<div class="post-title"><%= @post.next.title %></div>
+					<div class="post-date"><%= @post.next.created_at %></div>
+				</li>
+			</a>
+			<% else %>
+				<li class="extra-post right-post peter-river-box">
+					<div class="post-title">&nbsp;</div>
+					<div class="post-date">&nbsp;</div>
+				</li>
+			<% end %>
+		</div>
+		<div class="clearfix"></div>
+	</ul>
+	<%= erb :_comments, :locals => { :ident => @post.slug, :title => @post.title, :path => @post.path } %>
+</div>

@@ -1,0 +1,45 @@
+languages:
+  - C
+  - C++
+  - Java
+  - Haskell
+  - Ruby
+  - PHP
+  - Scala
+projects:
+  - title: "Hard in da Paint"
+    link: http://open.wobbier.com/portfolio/hard-in-da-paint.swf
+    img: /img/hard-in-da-paint.png
+    size: ";width=1280;height=720"
+    tags:
+      - AS3
+    description:
+      "My personal website as it is now. You're currently browsing it! It's powered by [Sinatra](http://www.sinatrarb.com/) using [erubis](http://www.kuwata-lab.com/erubis/), [Sass](http://sass-lang.com/) and [github-markup](http://github.com/github/markup). It's hosted proudly by [Heroku](https://www.heroku.com/)!"
+  - title: "Mint Hoster: Control Panel"
+    link: http://www.minthoster.com/
+    img: /img/minthoster.png
+    tags:
+      - RUBY
+      - RAILS
+      - HTML
+      - CSS
+    description:
+      "My personal website as it is now. You're currently browsing it! It's powered by [Sinatra](http://www.sinatrarb.com/) using [erubis](http://www.kuwata-lab.com/erubis/), [Sass](http://sass-lang.com/) and [github-markup](http://github.com/github/markup). It's hosted proudly by [Heroku](https://www.heroku.com/)!"
+  - title: "Kat Kombat"
+    link: http://open.wobbier.com/portfolio/kat-kombat.swf
+    img: /img/kat-kombat.png
+    size: ";width=800;height=600"
+    tags:
+      - AS3
+    description:
+      "My personal website as it is now. You're currently browsing it! It's powered by [Sinatra](http://www.sinatrarb.com/) using [erubis](http://www.kuwata-lab.com/erubis/), [Sass](http://sass-lang.com/) and [github-markup](http://github.com/github/markup). It's hosted proudly by [Heroku](https://www.heroku.com/)!"
+      
+  - title: "Simply Dark: A Dark WordPress Theme"
+    link: http://themes.wobbier.com/?wptheme=simply-dark
+    img: /img/simply-dark.png
+    tags:
+      - PHP
+      - HTML
+      - CSS
+    description:
+      "My personal website as it is now. You're currently browsing it! It's powered by [Sinatra](http://www.sinatrarb.com/) using [erubis](http://www.kuwata-lab.com/erubis/), [Sass](http://sass-lang.com/) and [github-markup](http://github.com/github/markup). It's hosted proudly by [Heroku](https://www.heroku.com/)!"

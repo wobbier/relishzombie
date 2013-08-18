@@ -1,0 +1,5 @@
+<div id="blog" class="right">
+	<% @posts.each_with_index do |post, index| %>
+		<%= erb :_post, :locals => { :post => post } %>
+	<% end %>
+</div>

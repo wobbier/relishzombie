@@ -1,0 +1,7 @@
+<div class='twitter right'>
+	<% @tweets.each do |tweet| %>
+	<div class='post'>
+		<%= parse_tweet(tweet.text) %>
+    </div>
+    <% end %>
+</div>

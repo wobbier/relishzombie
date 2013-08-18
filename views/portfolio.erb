@@ -1,0 +1,13 @@
+<div class='right portfolio'>
+<% @portfolio["projects"].each do |project| %>
+<div class='col'>
+	<a href="<%= project["link"] %>">
+		<img src="<%= project['img'] %>">
+		<img src="./img/bottom-left-shadow.png" class="thumb-shadow-left"/>
+		<img src="./img/bottom-right-shadow.png" class="thumb-shadow-right"/>
+		<img src="./img/bottom-left-curl.png" class="thumb-curl-left"/>
+		<img src="./img/bottom-right-curl.png" class="thumb-curl-right"/>
+	</a>
+</div>
+<% end %>
+</div>
