@@ -43,11 +43,11 @@ helpers do
   end
   
   def lang(language)
-    "<a href=\"https://github.com/search?q=%40wobbier&type=Repositories&ref=advsearch&l=#{escape(language)}\" class=\"lang\">#{language}</a>"
+    "<a href=\"https://github.com/search?q=%40relishzombie&type=Repositories&ref=advsearch&l=#{escape(language)}\" class=\"lang\">#{language}</a>"
   end
   
   def libr(library)
-    "<a href=\"https://github.com/search?l=&q=#{escape(library)}+%40wobbier&ref=advsearch&type=Code\" class=\"libr\">#{library}</a>"
+    "<a href=\"https://github.com/search?l=&q=#{escape(library)}+%40relishzombie&ref=advsearch&type=Code\" class=\"libr\">#{library}</a>"
   end
   
   def lang?(language)
@@ -113,20 +113,15 @@ get "/portfolio" do
   @portfolio = YAML.load_file "config/portfolio.yml"
   erb :portfolio
 end
-get "/css/theme.css" do
-  @colorvar = %w(249,87,48 254,55,74 110,167,60 90,177,168).sample
-  content_type "text/css"
-  "body{background: rgb(#{@colorvar})} .block{background: rgb(#{@colorvar})}"
-end
 # Social Networks
 get "/@" do
-  redirect to("http://twitter.com/wobbier")
+  redirect to("http://twitter.com/RobertEvola")
 end
 
 get "/~" do
-  redirect to("http://github.com/wobbier")
+  redirect to("http://github.com/relishzombie")
 end
 
 get "/&" do
-  redirect to("http://steamcommunity.com/id/wobbier2")
+  redirect to("http://steamcommunity.com/id/evolusion")
 end
